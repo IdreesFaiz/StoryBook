@@ -16,7 +16,13 @@ const Button = ({variant = 'primary',size = 'medium', className ,...props} : But
   );
   
 
-  
+
+
+  // If the variant is 'destructive', add an additional class
+  if (variant === 'destructive') {
+    classes = clsx(classes, styles.destructive);
+  }
+
   return <button {...props}  className={classes} />;
 };
 
