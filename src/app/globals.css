@@ -1,8 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-body {
-   @apply dark:bg-red-500 light:bg-blue-500;
-}
